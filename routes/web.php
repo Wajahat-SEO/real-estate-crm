@@ -6,6 +6,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\PlotController;
 use App\Http\Controllers\InstallmentController;
 use App\Http\Controllers\BlockController;
+use App\Http\Controllers\DashboardController;
 
 
 Route::get('/', function () {
@@ -34,6 +35,9 @@ Route::middleware('auth')->group(function () {
     
     // Same for Blocks
     Route::resource('blocks', BlockController::class);
+
+    Route::get('/summary', [DashboardController::class, 'summary'])->name('dashboard.summary');
+
 
     // Same for plots
     Route::resource('plots', PlotController::class)->except(['show']);
