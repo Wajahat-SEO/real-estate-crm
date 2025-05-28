@@ -31,8 +31,8 @@ class CustomerController extends Controller
     {
     // Validate the input data
     $validatedData = $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|email|unique:customers,email',  // Ensure email is unique
+        'full name' => 'required|string|max:255',
+        'father name' => 'required|string|max:255',  // Ensure email is unique
         'phone' => 'required|string',
         'address' => 'required|string',
         'block_id' => 'required|integer',
@@ -82,8 +82,8 @@ class CustomerController extends Controller
 
         // Validate the input data
         $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:customers,email,' . $customer->id,  // Exclude current customer's email
+            'full name' => 'required|string|max:255',
+            'father name' => 'required|string|max:255',  // Exclude current customer's email
             'phone' => 'required|string',
             'address' => 'required|string',
             'block_id' => 'required|integer',

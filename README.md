@@ -64,3 +64,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+<footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+    <p>If you have any questions or need support, contact us:</p>
+        <p>Wajahat Hussain</p>
+        <p>Phone: <a href="tel:+923418898767" class="text-white">+923418898767</a></p>
+        <p>WhatsApp: <a href="https://wa.me/+923418898767" class="text-white" target="_blank">Message me on WhatsApp</a></p>
+       <p>Email: <a href="mailto:admin@wajahatwrites.com" class="text-white">admin@wajahatwrites.com</a></p>
+              <p>Email: <a href="mailto:admin@wajahatwrites.com" class="text-white">admin@wajahatwrites.com</a></p>
+        <p>Website: <a href="https://wajahatwrites.com" class="text-white">wajahatwrites.com</a></p>
+        <p>Blog: <a href="https://seotechguru.co.uk" class="text-white">SEO & Tech Consultant</a></p>
+        <p>Copyright &copy; 2025 Wajahat Hussain. All rights reserved.</p>
+    </div>
+</footer>

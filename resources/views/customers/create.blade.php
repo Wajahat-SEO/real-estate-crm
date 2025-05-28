@@ -37,16 +37,16 @@
 
         <!-- Name -->
         <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" class="form-control" value="{{ old('name') }}" required>
+            <label for="full name">Name</label>
+            <input type="text" id="fullname" name="full name" class="form-control" value="{{ old('fullname') }}" required>
             @error('name') <div class="alert alert-danger">{{ $message }}</div> @enderror
         </div>
 
-        <!-- Email -->
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="form-control" value="{{ old('email') }}" required>
-            @error('email') <div class="alert alert-danger">{{ $message }}</div> @enderror
+       <!-- Name -->
+       <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="fathername" name="father name" class="form-control" value="{{ old('fathername') }}" required>
+            @error('name') <div class="alert alert-danger">{{ $message }}</div> @enderror
         </div>
 
         <!-- Phone -->

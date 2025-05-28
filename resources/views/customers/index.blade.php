@@ -21,7 +21,7 @@
             <thead class="bg-black text-white">
                 <tr>
                     <th class="px-6 py-3">Name</th>
-                    <th class="px-6 py-3">Email</th>
+                    <th class="px-6 py-3">Father Name</th>
                     <th class="px-6 py-3">Phone</th>
                     <th class="px-6 py-3">Block</th>
                     <th class="px-6 py-3">Plot #</th>
@@ -51,7 +51,7 @@
                     </td>
                     <td class="px-6 py-4 flex flex-wrap gap-2">
                         <a href="{{ route('customers.edit', $customer->id) }}" class="bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1 rounded text-sm">Edit</a>
-                        <form action="{{ route('customers.destroy', $customer->id) }}" method="POST" onsubmit="return confirm('Are you sure?')">
+                        <form class="btn btn-danger" action="{{ route('customers.destroy', $customer->id) }}" method="POST" onsubmit="return confirm('Are you sure?')">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm">Delete</button>

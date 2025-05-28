@@ -12,6 +12,7 @@
             <li><strong>Phone:</strong> {{ $customer->phone }}</li>
             <li><strong>Email:</strong> {{ $customer->email }}</li>
             <li><strong>Address:</strong> {{ $customer->address }}</li>
+            <li><strong>Plot Number:</strong> {{ $customer->plot->plot_number ?? 'N/A' }}</li>
         </ul>
     </div>
 

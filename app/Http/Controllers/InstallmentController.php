@@ -12,7 +12,8 @@ class InstallmentController extends Controller
 {
     public function byCustomer($id)
     {
-        $customer = Customer::findOrFail($id);
+        //$customer = Customer::findOrFail($id);
+        $customer = Customer::with('plot')->findOrFail($id);
         $installments = Installment::where('customer_id', $id)->get();
 
         return view('installments.index', compact('installments', 'customer'));
@@ -20,7 +21,8 @@ class InstallmentController extends Controller
 
     public function index($customerId)
     {
-        $customer = Customer::findOrFail($customerId);
+        //$customer = Customer::findOrFail($customerId);
+        $customer = Customer::with('plot')->findOrFail($customerId);
         $installments = Installment::where('customer_id', $customerId)->get();
     
         return view('installments.index', compact('customer', 'installments'));

@@ -44,14 +44,15 @@
 
         <!-- Customer Name -->
         <div class="mb-3">
-            <label for="name" class="form-label">Customer Name</label>
-            <input type="text" name="name" id="name" class="form-control" value="{{ old('name', $customer->name) }}" required>
+            <label for="fullname" class="form-label">Customer Name</label>
+            <input type="text" name="fullname" id="fullname" class="form-control" value="{{ old('name', $customer->fullname) }}" required>
         </div>
 
-        <!-- Customer Email -->
+       
+        <!-- Father Name -->
         <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" name="email" id="email" class="form-control" value="{{ old('email', $customer->email) }}" required>
+            <label for="fathername" class="form-label">Customer Name</label>
+            <input type="text" name="fathername" id="fathername" class="form-control" value="{{ old('fathername', $customer->fathername) }}" required>
         </div>
 
         <!-- Customer Phone -->
